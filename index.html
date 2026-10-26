@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta
+    name="description"
+    content="AquaWave — семейный аквапарк с горками, бассейнами и зонами отдыха."
+  >
+  <title>AquaWave — семейный аквапарк</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;600;800&display=swap"
+    rel="stylesheet"
+  >
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  >
+  <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+  <header class="bg-primary text-white py-3">
+    <div class="container">
+      <div class="row align-items-center g-3">
+        <div class="col-12 col-md-8">
+          <p class="h2 fw-bold mb-0">AquaWave</p>
+          <p class="mb-0 opacity-75">Семейный аквапарк: горки, бассейны и отдых</p>
+        </div>
+        <div class="col-12 col-md-4 text-md-end">
+          <span class="badge text-bg-light text-primary px-3 py-2">КР №2</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark" aria-label="Основная навигация">
+    <div class="container">
+      <a class="navbar-brand fw-semibold" href="index.html">AquaWave</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#mainNavbar"
+        aria-controls="mainNavbar"
+        aria-expanded="false"
+        aria-label="Открыть меню"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="#top">Главная</a></li>
+          <li class="nav-item"><a class="nav-link" href="#zones">Зоны отдыха</a></li>
+          <li class="nav-item"><a class="nav-link" href="#advantages">Преимущества</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contacts">Контакты</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main id="top">
+    <section class="hero-section py-5" aria-labelledby="hero-title">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-12 col-lg-6">
+            <h1 class="display-4 fw-bold mb-3" id="hero-title">Поймай свою волну</h1>
+            <p class="lead mb-4">
+              AquaWave — место для семейного отдыха, ярких спусков и спокойных
+              минут у тёплой воды.
+            </p>
+            <a class="btn btn-primary btn-lg" href="#zones">Выбрать зону отдыха</a>
+          </div>
+          <div class="col-12 col-lg-6">
+            <div class="hero-ticket p-4 p-md-5 mx-auto" aria-label="Информация о посещении AquaWave">
+              <p class="display-6 fw-bold mb-3">Вода. Движение. Отдых.</p>
+              <img
+                class="ticket-photo mb-4"
+                src="https://picsum.photos/id/640/960/480"
+                alt="Иллюстративный вид бирюзовой воды"
+                width="960"
+                height="480"
+              >
+              <p class="mb-4">Ежедневно, 10:00–22:00<br>Москва · учебный проект</p>
+              <div class="d-flex justify-content-between align-items-end">
+                <span class="badge text-bg-success px-3 py-2">Для всей семьи</span>
+                <span class="fs-4 fw-bold">от 1 200 ₽</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container my-5" id="advantages" aria-labelledby="advantages-title">
+      <div class="row mb-4">
+        <div class="col-lg-7">
+          <h2 class="mb-2" id="advantages-title">Отдых в своём ритме</h2>
+          <p class="mb-0">Выбирайте активные спуски, семейные бассейны или спокойную SPA-зону.</p>
+        </div>
+      </div>
+      <div class="row g-4">
+        <div class="col-12 col-md-4">
+          <article class="h-100 p-4 bg-white rounded-4">
+            <h3 class="h5">Безопасно</h3>
+            <p class="mb-0">Спасатели следят за зонами отдыха, а правила размещены у каждого аттракциона.</p>
+          </article>
+        </div>
+        <div class="col-12 col-md-4">
+          <article class="h-100 p-4 bg-white rounded-4">
+            <h3 class="h5">Для всей семьи</h3>
+            <p class="mb-0">Детский городок, семейные бассейны и экстремальные горки для взрослых.</p>
+          </article>
+        </div>
+        <div class="col-12 col-md-4">
+          <article class="h-100 p-4 bg-white rounded-4">
+            <h3 class="h5">Круглый год</h3>
+            <p class="mb-0">Тёплая вода и летнее настроение доступны в любой сезон.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="container my-5" id="zones" aria-labelledby="zones-title">
+      <div class="d-flex flex-column flex-sm-row justify-content-between align-items-sm-center gap-3 mb-4">
+        <div>
+          <h2 class="mb-1" id="zones-title">Популярные зоны</h2>
+          <p class="mb-0">Три идеи для незабываемого дня в AquaWave.</p>
+        </div>
+        <a class="btn btn-primary" href="#contacts">Узнать о билетах</a>
+      </div>
+      <div class="row g-4">
+        <div class="col-12 col-md-6 col-lg-4">
+          <article class="card h-100 border-0">
+            <img
+              class="zone-image"
+              src="https://picsum.photos/id/1052/800/480"
+              alt="Иллюстративный морской пейзаж для зоны водных горок"
+              width="800"
+              height="480"
+              loading="lazy"
+            >
+            <div class="card-body d-flex flex-column p-4">
+              <span class="badge text-bg-danger align-self-start mb-3">Адреналин</span>
+              <h3 class="h4">Водные горки</h3>
+              <p class="card-text">Скоростные спуски, закрытые тоннели и виражи для любителей впечатлений.</p>
+              <p class="fw-bold mt-auto mb-0">Рост от 120 см</p>
+            </div>
+          </article>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <article class="card h-100 border-0">
+            <img
+              class="zone-image"
+              src="https://picsum.photos/id/853/800/480"
+              alt="Иллюстративный спокойный морской пейзаж для волнового бассейна"
+              width="800"
+              height="480"
+              loading="lazy"
+            >
+            <div class="card-body d-flex flex-column p-4">
+              <span class="badge text-bg-primary align-self-start mb-3">Хит</span>
+              <h3 class="h4">Волновой бассейн</h3>
+              <p class="card-text">Мягкие волны, просторная вода и настроение морского побережья.</p>
+              <p class="fw-bold mt-auto mb-0">Для всех возрастов</p>
+            </div>
+          </article>
+        </div>
+        <div class="col-12 col-md-6 col-lg-4">
+          <article class="card h-100 border-0">
+            <img
+              class="zone-image"
+              src="https://picsum.photos/id/641/800/480"
+              alt="Иллюстративный пляжный пейзаж для детской зоны"
+              width="800"
+              height="480"
+              loading="lazy"
+            >
+            <div class="card-body d-flex flex-column p-4">
+              <span class="badge text-bg-success align-self-start mb-3">Семейная зона</span>
+              <h3 class="h4">Детский городок</h3>
+              <p class="card-text">Неглубокие бассейны, мини-горки и игровые элементы для маленьких гостей.</p>
+              <p class="fw-bold mt-auto mb-0">С 3 лет</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="container my-5" id="contacts" aria-labelledby="contacts-title">
+      <div class="p-4 p-md-5 bg-primary text-white rounded-4">
+        <div class="row align-items-center g-4">
+          <div class="col-12 col-lg-8">
+            <h2 id="contacts-title">Планируйте день в AquaWave</h2>
+            <p class="mb-0 opacity-75">График работы: ежедневно с 10:00 до 22:00. Подробная форма заявки появится на следующем этапе проекта.</p>
+          </div>
+          <div class="col-12 col-lg-4 text-lg-end">
+            <a class="btn btn-light btn-lg text-primary" href="mailto:aquawave@example.com">Написать нам</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-dark text-white py-4 mt-5">
+    <div class="container">
+      <div class="row align-items-center g-3">
+        <div class="col-12 col-md-6">
+          <p class="mb-0">© 2026 AquaWave. Учебный проект.</p>
+        </div>
+        <div class="col-12 col-md-6 text-md-end">
+          <a class="text-white text-decoration-none me-3" href="#zones">Зоны отдыха</a>
+          <a class="text-white text-decoration-none" href="mailto:aquawave@example.com">Контакты</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,102 @@
+:root {
+  --aqua-blue: #0d6efd;
+  --aqua-dark: #052c65;
+  --aqua-soft: #e7f5ff;
+}
+
+body {
+  min-height: 100svh;
+  font-family: "Schibsted Grotesk", Arial, sans-serif;
+  color: #102a43;
+  background: #f8fbff;
+}
+
+.hero-section {
+  background: var(--aqua-soft);
+}
+
+.display-4 {
+  font-size: clamp(3.5rem, 7vw, 7rem);
+  letter-spacing: -0.05em;
+  line-height: 0.9;
+}
+
+.hero-ticket {
+  max-width: 470px;
+  color: #fff;
+  background: var(--aqua-dark);
+  border-radius: 1rem;
+}
+
+.ticket-photo {
+  display: block;
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+
+.zone-image {
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+}
+
+.badge {
+  font-size: 0.875rem;
+}
+
+.badge.text-primary,
+.btn-light.text-primary {
+  color: var(--aqua-dark) !important;
+}
+
+.lead,
+.card-text {
+  max-width: 60ch;
+}
+
+.card {
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .hero-section .row > div,
+  .container > .row > div,
+  .card {
+    animation: rise-in 0.55s ease both;
+  }
+
+  .hero-section .row > div:nth-child(2),
+  .container > .row > div:nth-child(2),
+  .card:nth-child(2) {
+    animation-delay: 0.1s;
+  }
+
+  .container > .row > div:nth-child(3),
+  .card:nth-child(3) {
+    animation-delay: 0.2s;
+  }
+}
+
+@keyframes rise-in {
+  from {
+    opacity: 0.01;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 575.98px) {
+  .hero-ticket {
+    max-width: none;
+  }
+}
