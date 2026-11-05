@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="AquaWave: семейный аквапарк с горками, бассейнами и зонами отдыха.">
   <title>AquaWave: семейный аквапарк</title>
+  <script>document.documentElement.dataset.theme=localStorage.getItem('aquawave-theme')||'light';</script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -15,7 +16,7 @@
   <header class="site-header py-3">
     <div class="container">
       <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-2">
-        <a class="site-brand text-decoration-none" href="index.html">AquaWave</a>
+        <a class="site-brand text-decoration-none" href="index.html"><img class="site-logo" src="assets/images/aquawave-logo.png" alt="" width="48" height="48" aria-hidden="true">AquaWave</a>
         <p class="mb-0 fw-semibold">Семейный аквапарк · ежедневно 10:00–22:00</p>
       </div>
     </div>
@@ -23,7 +24,7 @@
 
   <nav class="navbar navbar-expand-lg navbar-dark site-navbar" aria-label="Основная навигация">
     <div class="container">
-      <a class="navbar-brand d-lg-none fw-bold" href="index.html">AquaWave</a>
+      <a class="navbar-brand d-lg-none fw-bold" href="index.html"><img class="site-logo site-logo--mobile" src="assets/images/aquawave-logo.png" alt="" width="36" height="36" aria-hidden="true">AquaWave</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Открыть меню">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -93,10 +94,72 @@
         <div class="col-12 col-md-6 col-lg-4"><article class="card zone-card h-100 reveal"><img class="card-img-top zone-image" src="assets/images/aquawave-kids.png" alt="Детский водный городок AquaWave" width="800" height="480" loading="lazy"><div class="card-body d-flex flex-column p-4"><span class="badge badge-family align-self-start mb-3">Семейная зона</span><h3 class="h4">Детский городок</h3><p class="card-text">Неглубокие бассейны, мини-горки и игровые элементы для маленьких гостей.</p><a class="btn btn-wave-outline mt-auto align-self-start" href="catalog.html">Выбрать зону</a></div></article></div>
       </div>
     </section>
+
+    <section class="container section-space pb-5" aria-labelledby="reviews-title">
+      <div class="row align-items-end g-3 mb-4">
+        <div class="col-lg-8"><h2 id="reviews-title">Гости о своём дне</h2><p class="section-lead mb-0">Короткие впечатления тех, кто уже поймал свою волну.</p></div>
+        <div class="col-lg-4 text-lg-end"><p class="mb-0 fw-bold">Средняя оценка <span class="review-score">4,9 <small>из 5</small></span></p></div>
+      </div>
+      <div class="reviews-shell reveal">
+        <div id="guestReviews" class="carousel slide" data-bs-ride="carousel" data-bs-interval="7000" data-bs-pause="hover">
+          <div class="carousel-inner">
+            <article class="carousel-item active">
+              <div class="review-slide">
+                <span class="review-score" aria-label="Оценка 5 из 5">5,0 <small>из 5</small></span>
+                <blockquote class="review-quote">«Дети не хотели уходить из водного городка, а мы успели спокойно отдохнуть у волнового бассейна».</blockquote>
+                <p class="review-author mb-0"><strong>Марина, Москва</strong><br><span>Семейный визит · октябрь 2026</span></p>
+              </div>
+            </article>
+            <article class="carousel-item">
+              <div class="review-slide">
+                <span class="review-score" aria-label="Оценка 4,8 из 5">4,8 <small>из 5</small></span>
+                <blockquote class="review-quote">«Горки бодрые, очереди двигались быстро. Особенно понравился закрытый тоннель — вернулись на него трижды».</blockquote>
+                <p class="review-author mb-0"><strong>Илья, Химки</strong><br><span>Визит с друзьями · сентябрь 2026</span></p>
+              </div>
+            </article>
+            <article class="carousel-item">
+              <div class="review-slide">
+                <span class="review-score" aria-label="Оценка 5 из 5">5,0 <small>из 5</small></span>
+                <blockquote class="review-quote">«Чисто, тепло и всё рядом: после ленивой реки зашли в кафе, а день завершили в SPA-зоне».</blockquote>
+                <p class="review-author mb-0"><strong>Ольга, Балашиха</strong><br><span>Парный визит · август 2026</span></p>
+              </div>
+            </article>
+          </div>
+          <div class="review-controls" aria-label="Управление отзывами">
+            <button class="carousel-control-prev review-control" type="button" data-bs-target="#guestReviews" data-bs-slide="prev" aria-label="Предыдущий отзыв"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m15 18-6-6 6-6"></path></svg></button>
+            <button class="carousel-control-next review-control" type="button" data-bs-target="#guestReviews" data-bs-slide="next" aria-label="Следующий отзыв"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m9 18 6-6-6-6"></path></svg></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container section-space pb-5" aria-labelledby="location-title">
+      <div class="row g-4 align-items-stretch">
+        <div class="col-12 col-lg-4">
+          <div class="visit-panel h-100 reveal">
+            <div>
+              <h2 class="h1 mb-3" id="location-title">Как нас найти</h2>
+              <p class="visit-panel__lead">Аквапарк находится рядом с ВДНХ — удобно приехать на метро или автомобиле.</p>
+            </div>
+            <address class="visit-address mb-4">
+              <strong>Москва, проспект Мира, 119</strong>
+              <span>Ежедневно, 10:00–22:00</span>
+              <a href="tel:+74951202200">+7 (495) 120-22-00</a>
+            </address>
+            <a class="btn btn-wave-primary align-self-start" href="https://yandex.ru/maps/?ll=37.633900%2C55.829900&amp;mode=routes&amp;rtext=~55.829900%2C37.633900&amp;rtt=auto&amp;z=16" target="_blank" rel="noopener noreferrer">Построить маршрут</a>
+          </div>
+        </div>
+        <div class="col-12 col-lg-8">
+          <div class="map-frame reveal">
+            <iframe src="https://yandex.ru/map-widget/v1/?ll=37.633900%2C55.829900&amp;z=16&amp;pt=37.633900%2C55.829900%2Cpm2rdm" width="960" height="480" loading="lazy" title="AquaWave Park на карте Москвы" allowfullscreen></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer class="site-footer py-5 mt-5">
-    <div class="container"><div class="row g-4"><div class="col-12 col-md-6 col-lg-4"><a class="footer-brand" href="index.html">AquaWave Park</a><p class="footer-copy mb-0">Семейный аквапарк, где насыщенный отдых легко собрать для каждого.</p></div><div class="col-12 col-sm-6 col-lg-2"><h2 class="h5 mb-3">Навигация</h2><ul class="list-unstyled footer-links mb-0"><li><a href="index.html">Главная</a></li><li><a href="catalog.html">Зоны отдыха</a></li><li><a href="product.html">Бассейн</a></li><li><a href="cafe.html">Кафе</a></li><li><a href="order.html">Билеты</a></li></ul></div><div class="col-12 col-sm-6 col-lg-3"><h2 class="h5 mb-3">Связаться</h2><address class="footer-copy mb-0"><a href="tel:+74951202200">+7 (495) 120-22-00</a><span><a href="mailto:hello@aquawavepark.ru">hello@aquawavepark.ru</a></span><span>Ежедневно, 10:00–22:00</span></address></div><div class="col-12 col-lg-3"><h2 class="h5 mb-3">AquaWave Park</h2><p class="footer-copy mb-0">Москва, ул. Летняя, 12<br>ООО «АкваВейв Парк»<br>Групповые визиты и праздники — по предварительной заявке</p></div></div><p class="footer-copy footer-note mb-0">© 2026 AquaWave Park. Все права защищены.</p></div>
+    <div class="container"><div class="row g-4"><div class="col-12 col-md-6 col-lg-4"><a class="footer-brand" href="index.html">AquaWave Park</a><p class="footer-copy mb-0">Семейный аквапарк, где насыщенный отдых легко собрать для каждого.</p></div><div class="col-12 col-sm-6 col-lg-2"><h2 class="h5 mb-3">Навигация</h2><ul class="list-unstyled footer-links mb-0"><li><a href="index.html">Главная</a></li><li><a href="catalog.html">Зоны отдыха</a></li><li><a href="product.html">Бассейн</a></li><li><a href="cafe.html">Кафе</a></li><li><a href="order.html">Билеты</a></li></ul></div><div class="col-12 col-sm-6 col-lg-3"><h2 class="h5 mb-3">Связаться</h2><address class="footer-copy mb-0"><a href="tel:+74951202200">+7 (495) 120-22-00</a><span><a href="mailto:hello@aquawavepark.ru">hello@aquawavepark.ru</a></span><span>Ежедневно, 10:00–22:00</span></address></div><div class="col-12 col-lg-3"><h2 class="h5 mb-3">AquaWave Park</h2><p class="footer-copy mb-0">Москва, проспект Мира, 119<br>ООО «АкваВейв Парк»<br>Групповые визиты и праздники — по предварительной заявке</p></div></div><p class="footer-copy footer-note mb-0">© 2026 AquaWave Park. Все права защищены.</p></div>
   </footer>
 
   <div class="modal fade" id="quickOrderModal" tabindex="-1" aria-labelledby="quickOrderModalTitle" aria-hidden="true"><div class="modal-dialog modal-dialog-centered"><div class="modal-content"><div class="modal-header"><h2 class="modal-title fs-4" id="quickOrderModalTitle">Быстрая заявка</h2><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Закрыть"></button></div><form class="quick-order-form"><div class="modal-body"><p class="mb-3">Оставьте контакты, полная форма доступна на отдельной странице.</p><label class="form-label" for="quickName">Имя</label><input class="form-control mb-3" id="quickName" name="name" required><label class="form-label" for="quickEmail">E-mail</label><input class="form-control" type="email" id="quickEmail" name="email" required><div class="alert alert-success d-none mt-3 mb-0" role="status">Заявка принята. Спасибо!</div></div><div class="modal-footer"><a class="btn btn-wave-outline" href="order.html">Полная форма</a><button class="btn btn-wave-primary" type="submit">Отправить</button></div></form></div></div></div>
