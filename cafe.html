@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Кафе AquaWave: блюда, напитки и семейное меню в аквапарке.">
+  <title>Кафе и питание: AquaWave</title>
+  <script>document.documentElement.dataset.theme=localStorage.getItem('aquawave-theme')||'light';</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+  <header class="site-header py-3">
+    <div class="container">
+      <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-2">
+        <a class="site-brand text-decoration-none" href="index.html"><img class="site-logo" src="assets/images/aquawave-logo.png" alt="" width="48" height="48" aria-hidden="true">AquaWave</a>
+        <p class="mb-0 fw-semibold">Семейный аквапарк · ежедневно 10:00–22:00</p>
+      </div>
+    </div>
+  </header>
+
+  <nav class="navbar navbar-expand-lg navbar-dark site-navbar" aria-label="Основная навигация">
+    <div class="container">
+      <a class="navbar-brand d-lg-none fw-bold" href="index.html"><img class="site-logo site-logo--mobile" src="assets/images/aquawave-logo.png" alt="" width="36" height="36" aria-hidden="true">AquaWave</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Открыть меню"><span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-2">
+          <li class="nav-item"><a class="nav-link" href="index.html">Главная</a></li>
+          <li class="nav-item"><a class="nav-link" href="catalog.html">Зоны отдыха</a></li>
+          <li class="nav-item"><a class="nav-link" href="product.html">Волновой бассейн</a></li>
+          <li class="nav-item"><a class="nav-link active" aria-current="page" href="cafe.html">Кафе и питание</a></li>
+          <li class="nav-item"><a class="nav-link" href="order.html">Заявка</a></li>
+          <li class="nav-item ms-lg-2"><a class="btn btn-wave-light" href="order.html">Купить билет</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section class="container section-space" aria-labelledby="cafe-title">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-6">
+          <h1 id="cafe-title">Перерыв со вкусом</h1>
+          <p class="section-lead mb-4">Загляните в кафе AquaWave между заплывами: сытные блюда, детское меню и прохладные напитки уже ждут вас рядом с главной зоной отдыха.</p>
+          <div class="d-flex flex-wrap gap-2" aria-label="Преимущества кафе">
+            <span class="badge badge-family">Детское меню</span>
+            <span class="badge badge-orange">Без длинного ожидания</span>
+            <span class="badge badge-blue">10:30–21:30</span>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <figure class="cafe-photo mb-0 reveal">
+            <img src="assets/images/aquawave-cafe.png" alt="Роллы, лимонад и молочный коктейль в кафе AquaWave" width="1200" height="760">
+            <figcaption>Кафе находится рядом с волновым бассейном</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="container pb-5" aria-labelledby="menu-title">
+      <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-end gap-3 mb-4">
+        <div>
+          <h2 id="menu-title" class="mb-1">Меню на любой ритм дня</h2>
+          <p class="section-lead mb-0">Актуальное меню и цены уточняйте у кассы кафе.</p>
+        </div>
+        <a class="link-wave" href="order.html">Спланировать посещение</a>
+      </div>
+      <div class="row g-4">
+        <div class="col-12 col-md-6 col-xl-4">
+          <article class="menu-panel h-100 reveal">
+            <div class="d-flex justify-content-between align-items-start gap-3 mb-4"><h3 class="h4 mb-0">Быстрый перекус</h3><span class="badge badge-orange">Хит</span></div>
+            <ul class="menu-list list-unstyled mb-0">
+              <li><span>Куриный ролл</span><strong>390 ₽</strong></li>
+              <li><span>Картофель по-деревенски</span><strong>220 ₽</strong></li>
+              <li><span>Салат с овощами</span><strong>290 ₽</strong></li>
+            </ul>
+          </article>
+        </div>
+        <div class="col-12 col-md-6 col-xl-4">
+          <article class="menu-panel h-100 reveal">
+            <div class="d-flex justify-content-between align-items-start gap-3 mb-4"><h3 class="h4 mb-0">Для маленьких гостей</h3><span class="badge badge-family">3+</span></div>
+            <ul class="menu-list list-unstyled mb-0">
+              <li><span>Мини-котлетки с пюре</span><strong>350 ₽</strong></li>
+              <li><span>Сырники со сметаной</span><strong>260 ₽</strong></li>
+              <li><span>Фруктовый стаканчик</span><strong>190 ₽</strong></li>
+            </ul>
+          </article>
+        </div>
+        <div class="col-12 col-md-6 col-xl-4">
+          <article class="menu-panel h-100 reveal">
+            <div class="d-flex justify-content-between align-items-start gap-3 mb-4"><h3 class="h4 mb-0">Напитки</h3><span class="badge badge-blue">Освежиться</span></div>
+            <ul class="menu-list list-unstyled mb-0">
+              <li><span>Домашний лимонад</span><strong>210 ₽</strong></li>
+              <li><span>Молочный коктейль</span><strong>250 ₽</strong></li>
+              <li><span>Чай или кофе</span><strong>180 ₽</strong></li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="container pb-5" aria-labelledby="cafe-info-title">
+      <div class="cafe-info reveal">
+        <div>
+          <h2 id="cafe-info-title" class="h3 mb-2">Всё, чтобы вернуться к воде с новыми силами</h2>
+          <p class="mb-0">Сообщите сотруднику об аллергии или особенностях питания — он подскажет подходящий вариант.</p>
+        </div>
+        <a class="btn btn-wave-primary" href="order.html">Выбрать билет</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer py-5 mt-5">
+    <div class="container"><div class="row g-4"><div class="col-12 col-md-6 col-lg-4"><a class="footer-brand" href="index.html">AquaWave Park</a><p class="footer-copy mb-0">Семейный аквапарк, где насыщенный отдых легко собрать для каждого.</p></div><div class="col-12 col-sm-6 col-lg-2"><h2 class="h5 mb-3">Навигация</h2><ul class="list-unstyled footer-links mb-0"><li><a href="index.html">Главная</a></li><li><a href="catalog.html">Зоны отдыха</a></li><li><a href="product.html">Бассейн</a></li><li><a href="cafe.html">Кафе</a></li><li><a href="order.html">Билеты</a></li></ul></div><div class="col-12 col-sm-6 col-lg-3"><h2 class="h5 mb-3">Связаться</h2><address class="footer-copy mb-0"><a href="tel:+74951202200">+7 (495) 120-22-00</a><span><a href="mailto:hello@aquawavepark.ru">hello@aquawavepark.ru</a></span><span>Ежедневно, 10:00–22:00</span></address></div><div class="col-12 col-lg-3"><h2 class="h5 mb-3">AquaWave Park</h2><p class="footer-copy mb-0">Москва, проспект Мира, 119<br>ООО «АкваВейв Парк»<br>Групповые визиты и праздники — по предварительной заявке</p></div></div><p class="footer-copy footer-note mb-0">© 2026 AquaWave Park. Все права защищены.</p></div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
